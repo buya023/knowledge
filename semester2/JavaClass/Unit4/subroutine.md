@@ -1,22 +1,22 @@
-////Subroutine definitions: 
+#Subroutine definitions: 
 
 modifiers  return-type  subroutine-name  ( parameter-list ) {
     statements
 }
-//Modifier:
+##Modifier:
 access specifiers: public and private 
 
-//return-type: 
+##return-type: 
 void: Nothing is returned
 int or String ...
 
-// parameter-list
+##parameter-list
 public static void main(String[] args) { ... }
 
-// Calling Subroutines
+##Calling Subroutines
 class-name.subroutine-name(parameters);
 
-// Variables that are declared as static member variable:
+##Variables that are declared as static member variable:
 static int gamesPlayed;
 static int gamesWon;
 
