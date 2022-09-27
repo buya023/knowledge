@@ -2,18 +2,18 @@
 The difference is nesting. A nested statement is putting code inside of other code, for example, putting an if statement inside of an existing if statement. On the other hand, chained conditionals are simply alternative branches using if, else, elif like the example below. There is no nesting, and all statements have the same depths in chained conditionals.
 
 ## Chained condition example:
-fNumber= input('What is your favorite number? ')
+```fNumber= input('What is your favorite number? ')
 Book= input('What is your favorite book? ')
 if fNumber == '9' and Book == 'Harry Potter':
    print('They are my favorites too.')
 elif Book == 'Harry Potter':
    print( Book + ' is my favorite book too.')
 elif fNumber != '9':
-   print('Okay. My favorite number is 9. Unfortunately we are different.')
+   print('Okay. My favorite number is 9. Unfortunately we are different.')```
 
     
 ## Nested statement example: Website login requirement
-age = int(input("What is your age? "))
+```age = int(input("What is your age? "))
  
 requiredMinAge = 13
 requiredLoc = "Mongolia"
@@ -31,7 +31,7 @@ else:
    if yearsLeft == 1:
        print("Please come in {} year.".format(yearsLeft))
    else:
-       print("Please come in {} years.".format(yearsLeft))
+       print("Please come in {} years.".format(yearsLeft))```
 
 
 
@@ -41,20 +41,20 @@ else:
 The strategy for avoiding nesting conditions is using logical operators such as 'and', 'or' and 'not'. I used the 'and' operator in the example.
 
 ### Example of nested condition:
-def words(word1, word2):
+```def words(word1, word2):
     if len(word1) > 5:
         if len(word2) > 5:
             print(' both words are longer than 5')
         else:
-            print( word1 'is longer than' word2)
+            print( word1 'is longer than' word2)```
 
 
 ### Equivalent single conditional:
-def words2(word1, word2):
+```def words2(word1, word2):
     if len(word1) >5 and len(word2) > 5:
         print(' both words are longer than 5')
     elif len(word1) >5 and len(word2)<5:
-        print( word1 'is longer than' word2)
+        print( word1 'is longer than' word2)```
 
 
 
@@ -62,7 +62,7 @@ Second strategy for avoiding nested conditionals: Guard and early return inside 
 
 ### Let’s transform Website login requirement code writing above. 
 
-def loginRequirement():
+```def loginRequirement():
    requiredMinAge = 13
    requiredLoc = "Mongolia"
  
@@ -82,7 +82,7 @@ def loginRequirement():
       
  
 answer = loginRequirement()
-print(answer)
+print(answer)```
 
 
 

@@ -1,8 +1,8 @@
 ## Example 1:
 	
-`def Function1(arg):`
+```def Function1(arg):`
    ` print(arg)`
-`Funcion('Example1')`
+`Funcion('Example1')```
 
 Output:
 	`Example1`
@@ -16,7 +16,7 @@ Explanation:
 ## Example2:
 
 ### When the argument is a value:
-Function1('Argument is a value')
+```Function1('Argument is a value')```
 
 Output:
 	Argument is a value
@@ -27,7 +27,7 @@ Explanation:
 
 
 ### When an argument is expression.
-Function1('Mean'*3)
+```Function1('Mean'*3)```
 
 Output:
 	MeanMeanMean
@@ -38,9 +38,9 @@ Explanation:
 	'Mean'*3 is an expression used as an argument.
 
 ### When an argument is variable.
-add='argument is a variable'
+```add='argument is a variable'
 Function1(add)
-
+```
 Output:
 	argument is a variable
 
@@ -54,10 +54,10 @@ Explanation:
 ## Example 3:
 
 ### Function with local variable
-def Function2(arg2):
+```def Function2(arg2):
     var=arg2+arg2
     print(var)
-Function2(67)
+Function2(67)```
 
 
 Output:
@@ -65,11 +65,11 @@ Output:
 
 
 ### When variable is outside the function
-def Function2(arg2):
+```def Function2(arg2):
     var=arg2+arg2
     print(var)
 Function2(67)
-print(var)
+print(var)```
 
 Output:
 134
@@ -83,10 +83,10 @@ Explanation:
 
 
 ## Example 4:
-def Function3(Uni):
+```def Function3(Uni):
     print(Uni)
 Function3('Example4')
-print(Uni)
+print(Uni)```
 
 Output:
 NameError: name 'Uni' is not defined. Did you mean: 'argv'?
@@ -97,7 +97,7 @@ Explanation:
 
 
 ## Example 5:
-num =67
+```num =67
 def calcu():
     num=34
     print(num*num)
@@ -106,7 +106,7 @@ print(num+23)
 
 Output:
 1156
-90
+90```
 
 Explanation:
 	num variable inside function used only inside the function.Thus, result of calcu is ‘1156’ as shown above. When calcu terminates, the num variable is destroyed. As explained in chapter 3 of Think Python. The num outside function with different value is a new variable that will be used outside that function. Thus, the output of print(num+23) is ‘90’.
